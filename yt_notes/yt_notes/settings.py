@@ -36,6 +36,7 @@ ALLOWED_HOSTS = [
     "127.0.0.1",
     "cs50wfinal-1.onrender.com",
     "cs50wfinali.onrender.com",
+     ".onrender.com",
 ]
 
 
@@ -147,6 +148,7 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 CSRF_TRUSTED_ORIGINS = [
+     "https://*.onrender.com",
     "https://react-note-app.onrender.com",  
     "https://cs50wfinal-1.onrender.com",     
     "https://cs50wfinali.onrender.com",
