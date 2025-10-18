@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'http://127.0.0.1:8000/',
+      baseURL: "https://finalcsw.onrender.com/",  // your backend Render URL     
+      /*baseURL: "http://127.0.0.1:8000",  use this to run on your local computer*/     
 });
 
 
