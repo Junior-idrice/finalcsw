@@ -11,11 +11,8 @@ const NavBar = ({ searchText, handleSearchText, isAuthenticated, setIsAuthentica
   const handleLogout = async () => {
     try {
       const refreshToken = localStorage.getItem('refresh_token');
-      
       if (refreshToken) {
-        await api.post('/auth/logout/', {
-          refresh: refreshToken
-        });
+        await api.post('/auth/logout/', { refresh: refreshToken });
       }
     } catch (error) {
       console.error('Logout error:', error);
@@ -23,7 +20,6 @@ const NavBar = ({ searchText, handleSearchText, isAuthenticated, setIsAuthentica
       localStorage.removeItem('access_token');
       localStorage.removeItem('refresh_token');
       localStorage.removeItem('user');
-      
       setIsAuthenticated(false);
       toast.success('Logged out successfully');
       navigate('/login');
@@ -31,43 +27,60 @@ const NavBar = ({ searchText, handleSearchText, isAuthenticated, setIsAuthentica
   };
 
   return (
-    <nav className="navbar py-50" style={{ padding: "20px",backgroundColor:"#e2d8c8ff" }}>
-      <div className="container d-flex justify-content-around align-items-center" >
+    <nav
+      className="navbar py-3"
+      style={{
+       
+        width: "100%",       
+        margin: 0,
+        paddingLeft: "5%",
+        paddingRight: "5%",
+      }}
+    >
+      <div
+        className="container-fluid d-flex flex-column flex-lg-row justify-content-around align-items-center gap-3"
+        style={{ width: "100%" }}
+      >
+       
         <Link className="navbar-brand" to="/">
           <h4 style={{ fontWeight: "bold" }}>NoteBook</h4>
         </Link>
 
+       
         {isAuthenticated && (
-          <div className="d-flex align-items-center">
-            <div
-              className="input-group input-group-sm"
-              style={{ width: "500px", height: "40px",backgroundColor:"#a4cacaff"  }}
-            >
-              <input
-                className="form-control"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-                value={searchText}
-                onChange={(e) => handleSearchText(e.target.value)}
-              />
-              <button className="btn btn-outline-success" type="submit">
-                SearchNote
-              </button>
-            </div>
+          <div
+            className="input-group input-group-sm"
+            style={{
+              width: "100%",
+              maxWidth: "500px",
+              height: "40px",
+              backgroundColor: "#a4cacaff",
+            }}
+          >
+            <input
+              className="form-control"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              value={searchText}
+              onChange={(e) => handleSearchText(e.target.value)}
+            />
+            <button className="btn btn-outline-success" type="submit">
+              SearchNote
+            </button>
           </div>
         )}
 
-        <div className="d-flex align-items-center gap-3">
+        <div className="d-flex align-items-center gap-3 flex-wrap justify-content-center">
           {isAuthenticated ? (
             <>
-              <span style={{ color: "black", fontSize: "14px",}}>
+              <span style={{ color: "black", fontSize: "14px" }}>
                 Welcome, <strong>{user.username}</strong>
               </span>
 
               <Link to="/add-note" style={{ textDecoration: "none" }}>
                 <button className="btn btn-outline-primary btn-md" type="button">
-                  <FaSquarePlus /> Add NoteBooks
+                  <FaSquarePlus /> Add Note
                 </button>
               </Link>
 
@@ -81,15 +94,11 @@ const NavBar = ({ searchText, handleSearchText, isAuthenticated, setIsAuthentica
             </>
           ) : (
             <>
-              <Link to="/login" style={{ textDecoration: "none" }}>
-                <button className="btn btn-outline-primary btn-md" type="button">
-                  Login
-                </button>
+              <Link to="/login">
+                <button className="btn btn-outline-primary btn-md">Login</button>
               </Link>
-              <Link to="/signup" style={{ textDecoration: "none" }}>
-                <button className="btn btn-primary btn-md" type="button">
-                  Sign Up
-                </button>
+              <Link to="/signup">
+                <button className="btn btn-primary btn-md">Sign Up</button>
               </Link>
             </>
           )}

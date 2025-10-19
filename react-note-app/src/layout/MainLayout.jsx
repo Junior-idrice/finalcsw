@@ -18,25 +18,60 @@ const MainLayout = ({ searchText, handleSearchText, isAuthenticated, setIsAuthen
         <Outlet />
       </div>
 
-     <footer className="layout-footer">
-      <div>
-        &copy; {new Date().getFullYear()} My NoteBook App. All rights reserved.
-      </div>
-      <div>
-        <a href="https://idricejunior.onrender.com">Get in touch with me!</a>
-      </div>
-      <div>
-        Built with React & Django|
-        <a href="https://github.com/Junior-idrice" target="_blank" rel="noreferrer">
-          GitHub
-        </a>
-      </div>
-      <div>
-        Follow me: 
-        <a href="https://www.instagram.com/idricejr/?igsh=MWt2ZjUybHZuamczcg%3D%3D#" target="_blank">Instagram</a> | 
-        <a href="https://www.linkedin.com/in/junior-idrice/" target="_blank">LinkedIn</a>
-      </div>
-     </footer>
+   <footer className="layout-footer bg-light py-3 mt-4">
+  <div className="container text-center" style={{ marginLeft: "5%" }}>
+    <div className="mb-2">
+      &copy; {new Date().getFullYear()} My NoteBook App. All rights reserved.
+    </div>
+
+    <div className="mb-2">
+      <a
+        href="https://idricejunior.onrender.com"
+        target="_blank"
+        rel="noreferrer"
+        className="text-decoration-none"
+      >
+        Get in touch with me!
+      </a>
+    </div>
+
+    <div className="mb-2">
+      Built with React & Django |
+      <a
+        href="https://github.com/Junior-idrice"
+        target="_blank"
+        rel="noreferrer"
+        className="ms-1 text-decoration-none"
+      >
+        GitHub
+      </a>
+    </div>
+
+    <div>
+      Follow me:{" "}
+      <a
+        href="https://www.instagram.com/idricejr/?igsh=MWt2ZjUybHZuamczcg%3D%3D#"
+        target="_blank"
+        rel="noreferrer"
+        className="text-decoration-none"
+      >
+        Instagram
+      </a>{" "}
+      |{" "}
+      <a
+        href="https://www.linkedin.com/in/junior-idrice/"
+        target="_blank"
+        rel="noreferrer"
+        className="text-decoration-none"
+      >
+        LinkedIn
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+
 
 
       <ToastContainer />

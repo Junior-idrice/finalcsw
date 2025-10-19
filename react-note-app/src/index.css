@@ -9,29 +9,6 @@ html, body, #root {
 }
 
 
-.layout-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; 
-}
-
-
-.layout-content {
-  flex: 1 0 auto;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-
-.layout-footer {
-  flex-shrink: 0; 
-  background-color: #e3e8eeff;
-  color: rgb(32, 27, 27);
-  text-align: center;
-  padding: 15px 10px;
-}
-
 
 body {
   background: #edf1f5;
@@ -187,3 +164,78 @@ body {
   }
 }
 
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  background: #edf1f5;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.layout-footer {
+  flex-shrink: 0;
+  background-color: #f8f9fa;
+  color: #212529;
+  text-align: center;
+  padding: 20px 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 576px) {
+  .layout-footer {
+    font-size: 14px;
+    padding: 15px 5px;
+  }
+}
+
+.note-has-grid .single-note-item {
+  max-width: 100% !important;
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .note-has-grid .single-note-item {
+    max-width: 350px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .note-has-grid .single-note-item {
+    max-width: 400px !important;
+  }
+}
+
+
+@media (min-width: 1400px) {
+  .note-has-grid .single-note-item {
+    max-width: 450px !important;
+  }
+}
+
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  background-color: #fff;
+  border: 0 solid transparent;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1.57rem;
+}

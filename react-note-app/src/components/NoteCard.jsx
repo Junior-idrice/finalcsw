@@ -10,8 +10,11 @@ const NoteCard = ({note}) => {
   const body = `${note.body.split(" ").slice(0, 20).join(" ")} ...`
   const color = note.category == "BUSINESS" ? "gray" : note.category == "PERSONAL" ? "lightblue" : "red"
 
-  return (
-    <div className="col-md-4 single-note-item all-category" style={{backgroundColor:"#e3e8eeff"}}>
+  return (  
+    <div className="col-12 col-md-4 single-note-item all-category" style={{backgroundColor:"#e3e8eeff"}}>
+
+
+
       <div className="card card-body" >
         <span className="side-stick" style={{ backgroundColor: color }}></span>
         <FaNoteSticky style={{ marginLeft: "auto", color: color }} />
