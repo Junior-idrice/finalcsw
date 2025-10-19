@@ -31,6 +31,7 @@ const SignupPage = ({ setIsAuthenticated }) => {
         setLoading(true);
 
         try {
+            console.log("POST to:", api.defaults.baseURL + 'auth/register/');
             const response = await api.post('auth/register/', formData);
 
             localStorage.setItem('access_token', response.data.access);

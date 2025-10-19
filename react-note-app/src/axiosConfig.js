@@ -1,23 +1,16 @@
-import axios from 'axios';
 
-const isProduction = window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1';
-
-
-const baseURL = isProduction
-  ? 'https://finalcsw.onrender.com'  
-  : 'http://127.0.0.1:8000';         
+import axios from "axios";
 
 const api = axios.create({
-  baseURL,
-  headers: {
-    'Content-Type': 'application/json',
-  },
+  baseURL:
+    process.env.NODE_ENV === "production"
+      ? "https://finalcsw.onrender.com/"
+      : "http://127.0.0.1:8000/",
 });
-
 
 api.interceptors.request.use(
   (config) => {
-    const token = localStorage.getItem('access_token');
+    const token = localStorage.getItem("access_token");
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;
     }
@@ -26,7 +19,6 @@ api.interceptors.request.use(
   (error) => Promise.reject(error)
 );
 
-
 api.interceptors.response.use(
   (response) => response,
   async (error) => {
@@ -34,26 +26,26 @@ api.interceptors.response.use(
 
     if (error.response?.status === 401 && !originalRequest._retry) {
       originalRequest._retry = true;
-
       try {
-        const refreshToken = localStorage.getItem('refresh_token');
-        if (!refreshToken) throw new Error('No refresh token found');
+        const refreshToken = localStorage.getItem("refresh_token");
+        const response = await axios.post(
+          `${
+            process.env.NODE_ENV === "production"
+              ? "https://finalcsw.onrender.com/"
+              : "http://127.0.0.1:8000/"
+          }auth/token/refresh/`,
+          { refresh: refreshToken }
+        );
 
-      
-        const refreshResponse = await axios.post(`${baseURL}/auth/token/refresh/`, {
-          refresh: refreshToken,
-        });
-
-        const { access } = refreshResponse.data;
-        localStorage.setItem('access_token', access);
-
+        const { access } = response.data;
+        localStorage.setItem("access_token", access);
         originalRequest.headers.Authorization = `Bearer ${access}`;
         return api(originalRequest);
       } catch (refreshError) {
-        localStorage.removeItem('access_token');
-        localStorage.removeItem('refresh_token');
-        localStorage.removeItem('user');
-        window.location.href = '/login';
+        localStorage.removeItem("access_token");
+        localStorage.removeItem("refresh_token");
+        localStorage.removeItem("user");
+        window.location.href = "/login";
         return Promise.reject(refreshError);
       }
     }

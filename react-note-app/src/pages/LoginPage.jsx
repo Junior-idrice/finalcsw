@@ -14,6 +14,7 @@ const LoginPage = ({ setIsAuthenticated }) => {
         setLoading(true);
 
         try {
+            console.log("POST to:", api.defaults.baseURL + 'auth/login/');
             const response = await api.post('auth/login/', { username, password });
 
             localStorage.setItem('access_token', response.data.access);
