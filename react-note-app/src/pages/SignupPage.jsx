@@ -93,7 +93,7 @@ const SignupPage = ({ setIsAuthenticated }) => {
                             Create Account
                         </h2>
                         <p className="text-center text-muted mb-4">
-                            Sign up to start taking notes
+                            Sign up to start taking your notes
                         </p>
 
                    

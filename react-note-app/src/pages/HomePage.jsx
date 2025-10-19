@@ -1,13 +1,25 @@
-import React from 'react'
-import Filter from '../components/Filter'
-import NoteCardContainer from '../components/NoteCardContainer'
+import React, { useState } from 'react';
+import Filter from '../components/Filter';
+import NoteCardContainer from '../components/NoteCardContainer';
 
-const HomePage = ({ notes, loading, handleFilterText, resetFilter }) => {
+const HomePage = ({ notes, loading }) => {
+  const [filterValue, setFilterValue] = useState("ALL"); 
+
+  const handleFilterText = (value) => {
+    setFilterValue(value);
+  };
+  const filteredNotes =
+    filterValue === "ALL"
+      ? notes
+      : notes.filter((note) => note.category === filterValue);
+  const resetFilter = () => {
+    setFilterValue("ALL");
+  };
+
   return (
     <>
-      <Filter handleFilterText={handleFilterText} />
-
-      {notes.length < 1 ? (
+      <Filter filterValue={filterValue} handleFilterText={handleFilterText} />
+      {filteredNotes.length < 1 && (
         <div style={{ textAlign: "center", marginTop: "20px" }}>
           <h4>No NoteBook available</h4>
           <button
@@ -25,11 +37,11 @@ const HomePage = ({ notes, loading, handleFilterText, resetFilter }) => {
             Show All Notes
           </button>
         </div>
-      ) : null}
+      )}
 
-      <NoteCardContainer notes={notes} loading={loading} />
+      <NoteCardContainer notes={filteredNotes} loading={loading} />
     </>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;

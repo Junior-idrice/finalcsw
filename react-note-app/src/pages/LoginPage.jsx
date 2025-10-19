@@ -65,7 +65,7 @@ const LoginPage = ({ setIsAuthenticated }) => {
                             Welcome Back
                         </h2>
                         <p className="text-center text-muted mb-4">
-                            Login to access your notes
+                            Login to access your noteBooks
                         </p>
 
                     
