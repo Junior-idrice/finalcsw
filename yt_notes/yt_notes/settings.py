@@ -153,8 +153,9 @@ CSRF_TRUSTED_ORIGINS = [
     "https://react-note-app.onrender.com",  
     "https://cs50wfinal-1.onrender.com",     
     "https://cs50wfinali.onrender.com",
-    "https://finalcsw.onrender.com",              # Django backend
+    "https://finalcsw.onrender.com",              
     "https://finalcsw-frontend.onrender.com",  
+    "https://react-note-app-43h3.onrender.com",
 ]
 
 REST_FRAMEWORK = {
@@ -180,5 +181,6 @@ CORS_ALLOWED_ORIGINS = [
     "https://cs50wfinali.onrender.com",
     "https://react-note-app.onrender.com", 
       "http://localhost:5173",            
-    "https://finalcsw-frontend.onrender.com",  
+    "https://finalcsw-frontend.onrender.com", 
+    "https://react-note-app-43h3.onrender.com", 
 ]
