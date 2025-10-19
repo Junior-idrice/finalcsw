@@ -97,7 +97,7 @@ const SignupPage = ({ setIsAuthenticated }) => {
                         </p>
 
                    
-                        <form onSubmit={handleSubmit} style={{ marginLeft: '-65px' }}>
+                        <form onSubmit={handleSubmit} style={{  marginLeft: 'auto',marginRight: 'auto', width:'100%' }}>
                             <div className="mb-3">
                                 <label className="form-label" style={{ fontWeight: '500' }}>
                                     Username
