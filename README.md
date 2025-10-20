@@ -1,9 +1,9 @@
 <h2>📖NoteBook App📖</h2>
 
-<p>This NoteBook App is a modern web-based notebook-taking application built using React for the frontend and Django + Django REST Framework for the backend. It provides users a seamless and responsive interface to create, view, search, and filter notes based on different categories. The application is fully responsive and optimized for both desktop and mobile devices.<p>
+<p>✨This NoteBook App is a modern web-based notebook-taking application built using React for the frontend and Django + Django REST Framework for the backend. It provides users a seamless and responsive interface to create, view, search, and filter notes based on different categories. The application is fully responsive and optimized for both desktop and mobile devices.<p>
 <hr>
 <h2>Features❄️</h2>
-<i>🗨️This web application includes the following features:✨</i>
+<i>🗨️This web application includes the following features:</i>
 <ul>
 <li>User Authentication: Secure signup, login, and logout functionality using JWT tokens. Users can create accounts and access their notes across devices.
 </li>
@@ -83,6 +83,7 @@ Signup or login to start managing notes.</li>
 <li>Responsive design ensures usability across mobile, tablet, and desktop devices.</li>
 <li></li>
 </ul>
-
+<h1>🎉Live Demo of NoteBook App</h1>
+<p>Have fun🤝: https://react-note-app-43h3.onrender.com/</p>
 <h2>💦License</h2>
-<h3>MIT License © 2025 [Idrice Junior]</h3>
+<h3>MIT License © 2025 Idrice Junior</h3>
