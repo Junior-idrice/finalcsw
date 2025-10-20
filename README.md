@@ -1,9 +1,9 @@
-<h2>NoteBook App📖</h2>
+<h2>📖NoteBook App📖</h2>
 
-<p>This NoteBook App is a modern web-based note-taking application built with React for the frontend and Django + Django REST Framework for the backend. It provides users a seamless and responsive interface to create, view, search, and filter notes based on different categories. The application is fully responsive and optimized for both desktop and mobile devices.<p>
+<p>This NoteBook App is a modern web-based notebook-taking application built using React for the frontend and Django + Django REST Framework for the backend. It provides users a seamless and responsive interface to create, view, search, and filter notes based on different categories. The application is fully responsive and optimized for both desktop and mobile devices.<p>
 <hr>
 <h2>Features❄️</h2>
-<i>This web application includes the following features:</i>
+<i>🗨️This web application includes the following features:✨</i>
 <ul>
 <li>User Authentication: Secure signup, login, and logout functionality using JWT tokens. Users can create accounts and access their notes across devices.
 </li>
@@ -21,7 +21,7 @@
 </li>
 </ul>
 
-<h2>Requirements</h2>
+<h2>®️Requirements</h2>
 <i>To run the app locally, the following are required:</i>
 <ul>
 <li>Backend (Django)</li>
@@ -39,7 +39,7 @@
 <li>cd NoteBookApp</li>
 </ul>
 <ol>
-<li><h3>Backend Setup</h3></li>
+<li><h3>💭Backend Setup</h3></li>
 <li>cd backend</li>
 <li>python -m venv env</li>
 <li>env\Scripts\activate     # Windows</li>
@@ -51,14 +51,14 @@
 </ol>
 
 <ol>
-<li><h3>Frontend Setup</h3></li>
+<li><h3>ℹ️Frontend Setup</h3></li>
 <li>cd ../frontend</li>
 <li>npm install</li>
 <li>npm run dev</li>
 <li>Frontend runs at http://localhost:5173/</li>
 </ol>
 
-<h2>Usage</h2>
+<h2>🪴Usage</h2>
 <ul>
 <li>Open the app in a web browser.</li>
 <li>
@@ -69,14 +69,14 @@ Signup or login to start managing notes.</li>
 <li>Logout when finished to end the session.</li>
 </ul>
 
-<h2>Technologies Used</h2>
+<h2>📔Technologies Used</h2>
 <ul>
 <li>Frontend: React, React Router, Bootstrap, React Toastify, React Icons</li>
 <li>Backend: Django, Django REST Framework, Simple JWT</li>
 <li>Styling: Custom CSS + Bootstrap</li>
 <li>Deployment: Render</li>
 </ul>
-<h2>Notes</h2>
+<h2>📒Notes</h2>
 <ul>
 <li>The app stores JWT tokens in localStorage for authentication.</li>
 <li>Filtering, searching, and navigation are dynamic without requiring page reloads.</li>
@@ -84,5 +84,5 @@ Signup or login to start managing notes.</li>
 <li></li>
 </ul>
 
-<h2>License</h2>
+<h2>💦License</h2>
 <h3>MIT License © 2025 [Idrice Junior]</h3>
