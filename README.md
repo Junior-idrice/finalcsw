@@ -20,54 +20,44 @@
 <li>Mobile-Friendly Interface: Forms, cards, buttons, and filters scale properly to smaller devices, maintaining usability and readability.
 </li>
 </ul>
-Requirements
 
-To run the app locally, the following are required:
+<h2>Requirements</h2>
+<i>To run the app locally, the following are required:</i>
+<ul>
+<li>Backend (Django)</li>
+<li>Python 3.10+</li>
+<li>Django 5.x</li>
+<li>Django REST Framework</li>
+<li>djangorestframework-simplejwt</li>
+<li>SQLite (default) or PostgreSQL/MySQL if preferred</li>
+<li>Frontend (React)</li>
+<li>Node.js 18+</li>
+<li>npm or yarn</li>
+<li>Installation & Setup</li>
+<li>Clone the repository</li>
+<li>git clone https://github.com/YourUsername/NoteBookApp.git</li>
+<li>cd NoteBookApp</li>
 
-Backend (Django)
+<ol>
+<li><b>Backend Setup</b></li>
+<li>cd backend</li>
+<li>python -m venv env</li>
+<li>env\Scripts\activate     # Windows</li>
+<li>source env/bin/activate  # Linux/macOS</li>
+<li>pip install -r requirements.txt</li>
+<li>python manage.py migrate</li>
+<li>python manage.py runserver</li>
+<li>Backend runs at http://127.0.0.1:8000/.</li>
+</ol>
 
-Python 3.10+
+<ol>
+<li><b>Frontend Setup</b></li>
+<li>cd ../frontend</li>
+<li>npm install</li>
+<li>npm run dev</li>
+</ol>
 
-Django 5.x
-
-Django REST Framework
-
-djangorestframework-simplejwt
-
-SQLite (default) or PostgreSQL/MySQL if preferred
-
-Frontend (React)
-
-Node.js 18+
-
-npm or yarn
-
-Installation & Setup
-
-Clone the repository
-
-git clone https://github.com/YourUsername/NoteBookApp.git
-cd NoteBookApp
-
-
-Backend Setup
-
-cd backend
-python -m venv env
-source env/bin/activate  # Linux/macOS
-env\Scripts\activate     # Windows
-pip install -r requirements.txt
-python manage.py migrate
-python manage.py runserver
-
-Backend runs at http://127.0.0.1:8000/.
-
-Frontend Setup
-
-cd ../frontend
-npm install
-npm start
-
+</ul>
 Usage
 
 Open the app in a web browser.
