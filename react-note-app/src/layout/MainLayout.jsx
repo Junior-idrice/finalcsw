@@ -22,9 +22,7 @@ const MainLayout = ({ searchText, handleSearchText, isAuthenticated, setIsAuthen
             position-relative custom-shadow">
                <div className="container">
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossOrigin="anonymous"></link>
-                <p className="lead">Copyright &copy; 2025 Frontend Developer</p>
-                <Link href="https://www.linkedin.com/in/junior-idrice/"><i className="bi bi-linkedin text-dark mx-1"></i></Link>
-                <Link href="https://www.instagram.com/idricejr?igsh=MWt2ZjUybHZuamczcg=="><i className="bi bi-instagram text-dark mx-1"></i></Link>
+
                  <div className="mb-2">
       &copy; {new Date().getFullYear()} My NoteBook App. All rights reserved.
     </div>
@@ -72,6 +70,8 @@ const MainLayout = ({ searchText, handleSearchText, isAuthenticated, setIsAuthen
         LinkedIn
       </a>
     </div>
+      <Link href="https://www.linkedin.com/in/junior-idrice/"><i className="bi bi-linkedin text-dark mx-1"></i></Link>
+      <Link href="https://www.instagram.com/idricejr?igsh=MWt2ZjUybHZuamczcg=="><i className="bi bi-instagram text-dark mx-1"></i></Link>
                
             </div>
             
