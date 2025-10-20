@@ -69,6 +69,16 @@ const MainLayout = ({ searchText, handleSearchText, isAuthenticated, setIsAuthen
     </div>
   </div>
 </footer>
+ <footer class="p-5 bg-light text-dark text-center
+            position-relative custom-shadow">
+            <div class="container">
+                <p class="lead">Copyright &copy; 2025 Frontend Developer</p>
+                <a href="https://www.linkedin.com/in/junior-idrice/"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="https://www.instagram.com/idricejr?igsh=MWt2ZjUybHZuamczcg=="><i class="bi bi-instagram text-dark mx-1"></i></a>
+               
+            </div>
+
+            </footer>
 
 
 
