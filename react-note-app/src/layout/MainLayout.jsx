@@ -18,63 +18,18 @@ const MainLayout = ({ searchText, handleSearchText, isAuthenticated, setIsAuthen
         <Outlet />
       </div>
 
-  
-            <footer className="p-5 bg-light text-dark text-center
-                        position-relative custom-shadow">
-                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossOrigin="anonymous"></link>
-                        <div className="container text-center" style={{ marginLeft: "5%" }}>
-                <div className="mb-2">
-                  &copy; {new Date().getFullYear()} My NoteBook App. All rights reserved.
-                </div>
+ <footer className="p-5 bg-light text-dark text-center
+            position-relative custom-shadow">
+               <div className="container">
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossOrigin="anonymous"></link>
+                <p className="lead">Copyright &copy; 2025 Frontend Developer</p>
+                <Link href="https://www.linkedin.com/in/junior-idrice/"><i className="bi bi-linkedin text-dark mx-1"></i></Link>
+                <Link href="https://www.instagram.com/idricejr?igsh=MWt2ZjUybHZuamczcg=="><i className="bi bi-instagram text-dark mx-1"></i></Link>
+               
+            </div>
+            
+           
 
-                <div className="mb-2">
-                  <a
-                    href="https://idricejunior.onrender.com"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-decoration-none"
-                  >
-                    Get in touch with me!
-                  </a>
-                </div>
-
-                <div className="mb-2">
-                  Built with React & Django |
-                  <a
-                    href="https://github.com/Junior-idrice"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="ms-1 text-decoration-none"
-                  >
-                    GitHub
-                  </a>
-                </div>
-
-                <div>
-                  Follow me:{" "}
-                  <a
-                    href="https://www.instagram.com/idricejr/?igsh=MWt2ZjUybHZuamczcg%3D%3D#"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-decoration-none"
-                  >
-                    Instagram
-                  </a>{" "}
-                  |{" "}
-                  <a
-                    href="https://www.linkedin.com/in/junior-idrice/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-decoration-none"
-                  >
-                    LinkedIn
-                  </a>
-                </div>
-                  <Link href="https://www.linkedin.com/in/junior-idrice/"><i className="bi bi-linkedin text-dark mx-1"></i></Link>
-                            <Link href="https://www.instagram.com/idricejr?igsh=MWt2ZjUybHZuamczcg=="><i className="bi bi-instagram text-dark mx-1"></i></Link>
-                            
-              </div>
-                        
             </footer>
 
 
