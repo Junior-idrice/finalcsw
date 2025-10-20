@@ -1,7 +1,7 @@
 <h2>📖NoteBook App📖</h2>
 
 <p>✨This NoteBook App is a modern web-based notebook-taking application built using React for the frontend and Django + Django REST Framework for the backend. It provides users a seamless and responsive interface to create, view, search, and filter notes based on different categories. The application is fully responsive and optimized for both desktop and mobile devices.<p>
-<hr>
+
 <h2>Features❄️</h2>
 <i>🗨️This web application includes the following features:</i>
 <ul>
