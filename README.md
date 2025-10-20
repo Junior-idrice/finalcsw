@@ -55,41 +55,34 @@
 <li>cd ../frontend</li>
 <li>npm install</li>
 <li>npm run dev</li>
+<li>Frontend runs at http://localhost:5173/</li>
 </ol>
 
+<h2>Usage</h2>
+<ul>
+<li>Open the app in a web browser.</li>
+<li>
+Signup or login to start managing notes.</li>
+<li>Add notes with titles, content, and categories.</li>
+<li>Use the filter dropdown to view notes by category or click “All Notes” to return to the full list.</li>
+<li>Search for notes by keywords using the search bar.</li>
+<li>Logout when finished to end the session.</li>
+</ul>
 
-Usage
+<h2>Technologies Used</h2>
+<ul>
+<li>Frontend: React, React Router, Bootstrap, React Toastify, React Icons</li>
+<li>Backend: Django, Django REST Framework, Simple JWT</li>
+<li>Styling: Custom CSS + Bootstrap</li>
+<li>Deployment: Render</li>
+</ul>
+<h2>Notes</h2>
+<ul>
+<li>The app stores JWT tokens in localStorage for authentication.</li>
+<li>Filtering, searching, and navigation are dynamic without requiring page reloads.</li>
+<li>Responsive design ensures usability across mobile, tablet, and desktop devices.</li>
+<li></li>
+</ul>
 
-Open the app in a web browser.
-
-Signup or login to start managing notes.
-
-Add notes with titles, content, and categories.
-
-Use the filter dropdown to view notes by category or click “All Notes” to return to the full list.
-
-Search for notes by keywords using the search bar.
-
-Logout when finished to end the session.
-
-Technologies Used
-
-Frontend: React, React Router, Bootstrap, React Toastify, React Icons
-
-Backend: Django, Django REST Framework, Simple JWT
-
-Styling: Custom CSS + Bootstrap
-
-Deployment: Render
-
-Notes
-
-The app stores JWT tokens in localStorage for authentication.
-
-Filtering, searching, and navigation are dynamic without requiring page reloads.
-
-Responsive design ensures usability across mobile, tablet, and desktop devices.
-
-License
-
-MIT License © 2025 [Idrice Junior]
+<h2>License</h2>
+<h3>MIT License © 2025 [Idrice Junior]</h3>
