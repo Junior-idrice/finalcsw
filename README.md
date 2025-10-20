@@ -37,9 +37,9 @@
 <li>Clone the repository</li>
 <li>git clone https://github.com/YourUsername/NoteBookApp.git</li>
 <li>cd NoteBookApp</li>
-
+</ul>
 <ol>
-<li><b>Backend Setup</b></li>
+<li><h3>Backend Setup</h3></li>
 <li>cd backend</li>
 <li>python -m venv env</li>
 <li>env\Scripts\activate     # Windows</li>
@@ -51,13 +51,13 @@
 </ol>
 
 <ol>
-<li><b>Frontend Setup</b></li>
+<li><h3>Frontend Setup</h3></li>
 <li>cd ../frontend</li>
 <li>npm install</li>
 <li>npm run dev</li>
 </ol>
 
-</ul>
+
 Usage
 
 Open the app in a web browser.
