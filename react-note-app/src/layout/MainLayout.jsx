@@ -25,11 +25,7 @@ const MainLayout = ({ searchText, handleSearchText, isAuthenticated, setIsAuthen
                 <p className="lead">Copyright &copy; 2025 Frontend Developer</p>
                 <Link href="https://www.linkedin.com/in/junior-idrice/"><i className="bi bi-linkedin text-dark mx-1"></i></Link>
                 <Link href="https://www.instagram.com/idricejr?igsh=MWt2ZjUybHZuamczcg=="><i className="bi bi-instagram text-dark mx-1"></i></Link>
-               
-            </div>
-            
-             <div className="container text-center" style={{ marginLeft: "5%" }}>
-    <div className="mb-2">
+                 <div className="mb-2">
       &copy; {new Date().getFullYear()} My NoteBook App. All rights reserved.
     </div>
 
@@ -76,7 +72,12 @@ const MainLayout = ({ searchText, handleSearchText, isAuthenticated, setIsAuthen
         LinkedIn
       </a>
     </div>
-  </div>
+               
+            </div>
+            
+           
+   
+  
            
 
             </footer>
