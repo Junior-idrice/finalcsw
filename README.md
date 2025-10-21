@@ -28,6 +28,7 @@
 <li>Python 3.10+</li>
 <li>Django 5.x</li>
 <li>Django REST Framework</li>
+<li>Django django cors headers</li>
 <li>djangorestframework-simplejwt</li>
 <li>SQLite (default) or PostgreSQL/MySQL if preferred</li>
 <li>Frontend (React)</li>
