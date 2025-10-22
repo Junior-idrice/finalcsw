@@ -85,6 +85,8 @@ Signup or login to start managing noteBooks.</li>
 <li></li>
 </ul>
 <h1>🎉Live Demo of NoteBook App</h1>
+<p>⚠️: please, first run https://finalcsw.onrender.com/, in other to start the backend, then :</p>
 <p>Have fun🤝: https://react-note-app-43h3.onrender.com/</p>
+
 <h2>💦License</h2>
 <h3>MIT License © 2025 Idrice Junior</h3>
