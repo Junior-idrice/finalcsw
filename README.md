@@ -83,7 +83,6 @@ To run the app locally, ensure the following are installed:
 ## ⚙️ Installation & Setup
 
 ### 1. Clone the Repository
-```bash
 git clone https://github.com/Junior-idrice/finalcsw.git
 cd finalcsw
 
