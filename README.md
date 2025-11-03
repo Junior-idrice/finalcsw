@@ -172,22 +172,22 @@ cd finalcsw
 
 
 ## 💭Backend Setup
-cd yt_notes
-python -m venv env
-env\Scripts\activate     # Windows
-source env/bin/activate  # Linux/macOS
-pip install -r requirements.txt
-python manage.py migrate
-python manage.py runserver
-Backend runs at http://127.0.0.1:8000/
+- cd yt_notes
+- python -m venv env
+- env\Scripts\activate     # Windows
+- source env/bin/activate  # Linux/macOS
+- pip install -r requirements.txt
+- python manage.py migrate
+- python manage.py runserver
+- Backend runs at http://127.0.0.1:8000/
 
 
 
 ## ℹ️Frontend Setup
-cd ../react-note-app
-npm install
-npm run dev
-Frontend runs at http://localhost:5173/
+- cd ../react-note-app
+- npm install
+- npm run dev
+- Frontend runs at http://localhost:5173/
 
 
 ## 🪴Usage
