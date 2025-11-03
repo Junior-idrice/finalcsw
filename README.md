@@ -207,16 +207,16 @@ Backend: Django, Django REST Framework, Simple JWT
 Styling: Custom CSS + Bootstrap
 Deployment: Render
 
-# 📒NoteBooks
+## 📒NoteBooks
 
 The app stores JWT tokens in localStorage for authentication.
 Filtering, searching, and navigation are dynamic without requiring page reloads.
 Responsive design ensures usability across mobile, tablet, and desktop devices.
 
 
-# 🎉Live Demo of NoteBook App
-# ⚠️: please, first run https://finalcsw.onrender.com/, in other to start the backend, then :
+## 🎉Live Demo of NoteBook App
+## ⚠️: please, first run https://finalcsw.onrender.com/, in other to start the backend, then :
 Have fun🤝: https://react-note-app-43h3.onrender.com/
 
-# 💦License
-# MIT License © 2025 Idrice Junior
+## 💦License
+## MIT License © 2025 Idrice Junior
