@@ -14,7 +14,11 @@ The application is fully responsive and optimized for both desktop and mobile de
 ---
 
 ## 🧠 Distinctiveness and Complexity
-This project stands out from other assignments in the CS50W course because it combines two modern frameworks — Django for the backend and React for the frontend. Unlike earlier projects, which typically focused on one framework or a single-layer design, this project demonstrates how both technologies can interact seamlessly through a REST API. This project is distinct and complex because it goes far beyond simple CRUD examples seen in coursework.  
+This project is significantly different from the other CS50W projects in several important ways.
+First and foremost, it introduces a complete connection between a backend and a frontend, showcasing how data flows between two distinct systems. The interaction between Django REST Framework (serving as the backend API) and React (as the frontend interface) forms the core of this project’s distinctiveness. This communication layer — involving structured endpoints, serialized data, and secure token-based authentication — adds a level of technical depth and architectural design not present in the earlier course projects.
+Additionally, the project implements real user authentication using JWT tokens, including token refreshing and secure browser storage, ensuring proper session handling similar to professional web applications. On the frontend, features like React Hooks for state management, React Toastify for real-time notifications, and dynamic rendering through Axios API calls demonstrate modern frontend engineering practices. Combined, these elements make the project not only more advanced but also more interactive, responsive, and user-centered.
+While projects like Wiki, Commerce, or Network emphasize specific Django functionalities, this NoteBook App goes beyond them by fully separating the frontend and backend. The backend provides a RESTful API that handles data persistence, authentication, and user requests, while the frontend consumes this API asynchronously, updating the interface without page reloads. This reflects the architecture of real-world, production-ready web applications.
+Furthermore, the application’s category-based filtering and real-time search features create a smooth user experience, giving it a level of interactivity not seen in static or template-based Django projects. The integration of these technologies results in a truly distinct project that bridges traditional server-rendered pages and modern single-page applications.
 It integrates **two modern frameworks** — React (frontend) and Django REST (backend) — to build a complete full-stack system with **real authentication**, **category-based filtering**, and **dynamic search**.
 
 ### Key Points of Distinctiveness
@@ -64,7 +68,25 @@ While the concept behind the app — taking notes — might seem simple, the und
 - **Mobile-Friendly Interface:** Layouts, forms, and buttons scale for smaller screens.
 
 ---
+## 🗂️ Files Description
 
+The project consists of two main parts — the backend (Django) and the frontend (React). Together, they form a complete full-stack web application where Django handles data management and authentication, while React provides the user interface and handles dynamic updates. Below is a detailed explanation of the main files and their roles, focusing on the parts I built and contributed to.
+
+## 🐍 Backend (Django)
+
+The backend folder contains all the logic for data storage, authentication, and API communication. I built a Django REST API using Django REST Framework (DRF) to manage requests between the client and the database.
+
+- `models.py` — Defines the core database model Note, which includes fields for the note’s title, content, category, slug, category, created_at, and a foreign key linking each note to its user. I designed this model to support personalized note storage, ensuring that each user can only access their own data.
+
+-`serializers.py` — Converts Django model instances into JSON format so that they can be easily sent to and from the React frontend. The serializer also validates incoming data before saving it to the database.
+
+-`views.py` — Contains all API endpoints for CRUD operations (Create, Read, Update, Delete) and authentication. I implemented custom logic for listing notes by user, filtering by category, and performing keyword searches. The file also includes endpoints for user registration and JWT-based login.
+
+-`urls.py` — Maps all API routes, such as /notes/, /notes-search/, /signup/, and /login/. I organized routes by functionality to maintain clean and logical project structure.
+
+-`settings.py- — Configures essential components including Django REST Framework, JWT Authentication, and CORS (Cross-Origin Resource Sharing). I customized this file to allow secure communication between the backend (port 8000) and the React frontend (port 5173).
+
+ In summary, I built the backend from scratch to provide a secure, RESTful API capable of handling all user interactions and persistent data storage. It is responsible for authenticating users, storing their notes, and serving data dynamically to the frontend.
 ## 🗂️ Files Description
 
 ### Backend (Django)
