@@ -144,8 +144,8 @@ To run the app locally, ensure the following are installed:
 - djangorestframework-simplejwt
 - SQLite (default) or PostgreSQL/MySQL
 
-**Frontend (React)**
-⚛️ Frontend (React)
+
+**⚛️ Frontend (React)**
 
 -`Node.js 18+` — Provides the JavaScript runtime environment required to run and build React applications outside the browser.
 
@@ -171,54 +171,52 @@ git clone https://github.com/Junior-idrice/finalcsw.git
 cd finalcsw
 
 
-<ol>
-<li><h3>💭Backend Setup</h3></li>
-<li>cd yt_notes</li>
-<li>python -m venv env</li>
-<li>env\Scripts\activate     # Windows</li>
-<li>source env/bin/activate  # Linux/macOS</li>
-<li>pip install -r requirements.txt</li>
-<li>python manage.py migrate</li>
-<li>python manage.py runserver</li>
-<li>Backend runs at http://127.0.0.1:8000/.</li>
-</ol>
+## 💭Backend Setup
+cd yt_notes
+python -m venv env
+env\Scripts\activate     # Windows
+source env/bin/activate  # Linux/macOS
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+Backend runs at http://127.0.0.1:8000/
 
-<ol>
-<li><h3>ℹ️Frontend Setup</h3></li>
-<li>cd ../react-note-app</li>
-<li>npm install</li>
-<li>npm run dev</li>
-<li>Frontend runs at http://localhost:5173/</li>
-</ol>
 
-<h2>🪴Usage</h2>
-<ul>
-<li>Open the app in a web browser.</li>
-<li>
-Signup or login to start managing noteBooks.</li>
-<li>Add noteBooks with titles, content, and categories.</li>
-<li>Use the filter dropdown to view noteBooks by category or click “All Notes” to return to the full list.</li>
-<li>Search for noteBooks by keywords using the search bar.</li>
-<li>Logout when finished to end the session.</li>
-</ul>
 
-<h2>📔Technologies Used</h2>
-<ul>
-<li><b>Frontend</b>: React, React Router, Bootstrap, React Toastify, React Icons</li>
-<li><b>Backend</b>: Django, Django REST Framework, Simple JWT</li>
-<li><b>Styling</b>: Custom CSS + Bootstrap</li>
-<li><b>Deployment</b>: Render</li>
-</ul>
-<h2>📒NoteBooks</h2>
-<ul>
-<li>The app stores JWT tokens in localStorage for authentication.</li>
-<li>Filtering, searching, and navigation are dynamic without requiring page reloads.</li>
-<li>Responsive design ensures usability across mobile, tablet, and desktop devices.</li>
-<li></li>
-</ul>
-<h1>🎉Live Demo of NoteBook App</h1>
-<p>⚠️: please, first run https://finalcsw.onrender.com/, in other to start the backend, then :</p>
-<p>Have fun🤝: https://react-note-app-43h3.onrender.com/</p>
+## ℹ️Frontend Setup
+cd ../react-note-app
+npm install
+npm run dev
+Frontend runs at http://localhost:5173/
 
-<h2>💦License</h2>
-<h3>MIT License © 2025 Idrice Junior</h3>
+
+## 🪴Usage
+
+Open the app in a web browser.
+
+Signup or login to start managing noteBooks.
+Add noteBooks with titles, content, and categories.
+Use the filter dropdown to view noteBooks by category or click “All Notes” to return to the full list.
+Search for noteBooks by keywords using the search bar.
+Logout when finished to end the session.
+
+
+## 📔Technologies Used
+Frontend: React, React Router, Bootstrap, React Toastify, React Icons
+Backend: Django, Django REST Framework, Simple JWT
+Styling: Custom CSS + Bootstrap
+Deployment: Render
+
+# 📒NoteBooks
+
+The app stores JWT tokens in localStorage for authentication.
+Filtering, searching, and navigation are dynamic without requiring page reloads.
+Responsive design ensures usability across mobile, tablet, and desktop devices.
+
+
+# 🎉Live Demo of NoteBook App
+# ⚠️: please, first run https://finalcsw.onrender.com/, in other to start the backend, then :
+Have fun🤝: https://react-note-app-43h3.onrender.com/
+
+# 💦License
+# MIT License © 2025 Idrice Junior
