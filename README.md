@@ -88,7 +88,7 @@ The backend folder contains all the logic for data storage, authentication, and 
 
  In summary, I built the backend from scratch to provide a secure, RESTful API capable of handling all user interactions and persistent data storage. It is responsible for authenticating users, storing their notes, and serving data dynamically to the frontend.
 
- ### ⚛️ Frontend (React)
+ ## ⚛️ Frontend (React)
 
 The frontend is a single-page application (SPA) built using React and the Vite build tool. It communicates with the Django API using axios to retrieve and update data asynchronously, ensuring that users can interact with their notes in real time without reloading the page.
 
