@@ -119,11 +119,24 @@ This file is crucial for maintaining a secure and seamless authentication workfl
 
 ---
 
-## ®️ Requirements
+## 🧩 Requirements
 
+To run this project locally, make sure both backend and frontend environments are properly configured. The application uses Django for the backend (server logic and database) and React for the frontend (user interface).
 To run the app locally, ensure the following are installed:
 
-**Backend (Django)**
+
+**🖥️ Backend (Django)**
+
+-`Python 3.10+` — The programming language that powers Django and all backend functionality. Python is required to run the server, manage the database, and handle API requests.
+
+-`Django 5.x` — The core backend framework used to structure the project. Django manages routing, models, views, and templates, providing a robust environment for building web applications.
+
+-`Django REST Framework (DRF)` — Extends Django’s capabilities to create RESTful APIs. It allows the backend to send and receive data in JSON format, enabling communication with the React frontend.
+
+-`Django CORS Headers` — Enables Cross-Origin Resource Sharing, allowing the React frontend (running on a different port or domain) to securely communicate with the Django backend without browser restrictions.
+
+-`djangorestframework-simplejwt` — Handles authentication using JSON Web Tokens (JWT). It provides access and refresh tokens to ensure secure user login, logout, and session management.
+
 - Python 3.10+
 - Django 5.x
 - Django REST Framework
@@ -132,6 +145,20 @@ To run the app locally, ensure the following are installed:
 - SQLite (default) or PostgreSQL/MySQL
 
 **Frontend (React)**
+⚛️ Frontend (React)
+
+-`Node.js 18+` — Provides the JavaScript runtime environment required to run and build React applications outside the browser.
+
+-`npm or yarn` — Package managers used to install and manage project dependencies such as React Router, Axios, and React Toastify.
+
+-`React` — The main frontend library used to create a responsive and interactive user interface. React handles dynamic page rendering, state management, and real-time updates through hooks and components.
+
+-`Axios` — Handles HTTP requests from the frontend to the Django backend, especially for authentication, data fetching, and note creation.
+
+-`React Router` — Enables navigation and page routing without reloading the entire page.
+
+-`React Toastify` — Displays user-friendly notifications for actions such as successful logins, errors, or note updates.
+
 - Node.js 18+
 - npm or yarn
 
