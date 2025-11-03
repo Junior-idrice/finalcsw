@@ -84,7 +84,7 @@ The backend folder contains all the logic for data storage, authentication, and 
 
 -`urls.py` — Maps all API routes, such as /notes/, /notes-search/, /signup/, and /login/. I organized routes by functionality to maintain clean and logical project structure.
 
--`settings.py- — Configures essential components including Django REST Framework, JWT Authentication, and CORS (Cross-Origin Resource Sharing). I customized this file to allow secure communication between the backend (port 8000) and the React frontend (port 5173).
+-`settings.py` — Configures essential components including Django REST Framework, JWT Authentication, and CORS (Cross-Origin Resource Sharing). I customized this file to allow secure communication between the backend (port 8000) and the React frontend (port 5173).
 
  In summary, I built the backend from scratch to provide a secure, RESTful API capable of handling all user interactions and persistent data storage. It is responsible for authenticating users, storing their notes, and serving data dynamically to the frontend.
 
@@ -92,40 +92,21 @@ The backend folder contains all the logic for data storage, authentication, and 
 
 The frontend is a single-page application (SPA) built using React and the Vite build tool. It communicates with the Django API using axios to retrieve and update data asynchronously, ensuring that users can interact with their notes in real time without reloading the page.
 
-src/App.jsx — The main entry point of the application. It defines the overall routing structure using React Router and manages the layout shared across all pages.
+-`src/App.jsx` — The main entry point of the application. It defines the overall routing structure using React Router and manages the layout shared across all pages.
 
-src/pages/HomePage.jsx — Displays all user notes and integrates both search and filter functionalities. This page communicates directly with the backend to fetch and update notes dynamically.
+-`src/pages/HomePage.jsx` — Displays all user notes and integrates both search and filter functionalities. This page communicates directly with the backend to fetch and update notes dynamically.
 
-src/pages/LoginPage.jsx and src/pages/SignupPage.jsx — Handle user authentication and registration. I implemented form validation, API requests for JWT tokens, and token storage in localStorage to maintain user sessions securely.
+-`src/pages/LoginPage.jsx` and `src/pages/SignupPage.jsx` — Handle user authentication and registration. I implemented form validation, API requests for JWT tokens, and token storage in localStorage to maintain user sessions securely.
 
-src/components/Filter.jsx — Provides a dropdown menu for filtering notes by category (e.g., Personal, Business, Important). This component helps make the UI interactive and intuitive.
+-`src/components/Filter.jsx` — Provides a dropdown menu for filtering notes by category (e.g., Personal, Business, Important). This component helps make the UI interactive and intuitive.
 
-src/components/NoteCardContainer.jsx — Displays all notes in a grid-like structure. It receives data from the backend and updates the list in real time when a note is added, edited, or deleted.
+-`src/components/NoteCardContainer.jsx` — Displays all notes in a grid-like structure. It receives data from the backend and updates the list in real time when a note is added, edited, or deleted.
 
-src/components/NoteCard.jsx — Represents individual note items. It includes logic for displaying note information and buttons for editing or deleting a note.
+-`src/components/NoteCard.jsx` — Represents individual note items. It includes logic for displaying note information and buttons for editing or deleting a note.
 
-src/components/Navbar.jsx — Implements the navigation bar, which includes links to pages like Home, Login, and Signup, as well as a logout function that clears authentication tokens.
+-`src/components/Navbar.jsx` — Implements the navigation bar, which includes links to pages like Home, Login, and Signup, as well as a logout function that clears authentication tokens.
 
-.env — Stores environment variables, such as API base URLs, to separate configuration details from source code for better security and flexibility.
-
-Through this frontend, I designed and implemented the full user interface, handling state management, authentication flow, and user experience design. Every action performed on the frontend (such as creating, editing, or deleting a note) interacts with the backend in real time, demonstrating my understanding of asynchronous data handling and UI synchronization.
-
-### Backend (Django)
-- `models.py` — Defines the Note model with fields for title, content, category, user, and timestamp.  
-- `views.py` — Contains API endpoints for CRUD operations, authentication, and search functionality.  
-- `serializers.py` — Converts model data to JSON for communication with the frontend.  
-- `urls.py` — Maps all API routes (`notes/`, `notes-search/`, `signup/`, etc.).  
-- `settings.py` — Configures REST Framework, JWT authentication, and CORS.
-
-### Frontend (React)
-- `src/App.jsx` — Main entry point managing all routes and layout.  
-- `src/pages/HomePage.jsx` — Displays the list of notes and integrates search and filter components.  
-- `src/pages/LoginPage.jsx` and `src/pages/SignupPage.jsx` — Manage user authentication forms.  
-- `src/components/Filter.jsx` — Handles category filtering through a dropdown menu.  
-- `src/components/NoteCardContainer.jsx` — Displays all notes dynamically.  
-- `src/components/NoteCard.jsx` — Represents individual note cards.  
-- `src/components/Navbar.jsx` — Manages navigation and logout.  
-- `.env` — Stores environment variables such as API endpoints.  
+# Through this frontend, I designed and implemented the full user interface, handling state management, authentication flow, and user experience design. Every action performed on the frontend (such as creating, editing, or deleting a note) interacts with the backend in real time, demonstrating my understanding of asynchronous data handling and UI synchronization.
 
 ---
 
