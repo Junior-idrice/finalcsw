@@ -15,14 +15,19 @@ The application is fully responsive and optimized for both desktop and mobile de
 
 ## 🧠 Distinctiveness and Complexity
 This project is significantly different from the other CS50W projects in several important ways.
+
 First and foremost, it introduces a complete connection between a backend and a frontend, showcasing how data flows between two distinct systems. The interaction between Django REST Framework (serving as the backend API) and React (as the frontend interface) forms the core of this project’s distinctiveness. This communication layer — involving structured endpoints, serialized data, and secure token-based authentication — adds a level of technical depth and architectural design not present in the earlier course projects.
+
 Additionally, the project implements real user authentication using JWT tokens, including token refreshing and secure browser storage, ensuring proper session handling similar to professional web applications. On the frontend, features like React Hooks for state management, React Toastify for real-time notifications, and dynamic rendering through Axios API calls demonstrate modern frontend engineering practices. Combined, these elements make the project not only more advanced but also more interactive, responsive, and user-centered.
+
 While projects like Wiki, Commerce, or Network emphasize specific Django functionalities, this NoteBook App goes beyond them by fully separating the frontend and backend. The backend provides a RESTful API that handles data persistence, authentication, and user requests, while the frontend consumes this API asynchronously, updating the interface without page reloads. This reflects the architecture of real-world, production-ready web applications.
+
 Furthermore, the application’s category-based filtering and real-time search features create a smooth user experience, giving it a level of interactivity not seen in static or template-based Django projects. The integration of these technologies results in a truly distinct project that bridges traditional server-rendered pages and modern single-page applications.
 It integrates **two modern frameworks** — React (frontend) and Django REST (backend) — to build a complete full-stack system with **real authentication**, **category-based filtering**, and **dynamic search**.
 
 ### Key Points of Distinctiveness
 While CS50W projects like Wiki, Commerce, or Network each focus on different individual concepts such as **templating or Django models**, this project goes further by separating the frontend and backend completely. The backend provides a **Django REST Framework (DRF) API** that handles data persistence, authentication, and permissions, while the React frontend consumes this API asynchronously to display and update data dynamically.
+
 The app’s structure and interaction model are more aligned with modern, production-level applications. The user experience is built around **asynchronous JavaScript requests** rather than traditional page reloads, resulting in smoother and faster interactions. The inclusion of **JWT (JSON Web Token) authentication** further distinguishes this project, allowing secure, token-based user login and session management directly in the frontend.
 
 Additionally, the app’s category-based **filtering and dynamic search** capabilities make it more than just a static note-taking tool. Users can search and filter notes in real time, reflecting the responsiveness of modern web apps like Notion or Google Keep. This integration of multiple frameworks and features gives the project both a distinct and practical edge over simpler CRUD-based applications.
