@@ -105,8 +105,12 @@ The frontend is a single-page application (SPA) built using React and the Vite b
 - `src/components/NoteCard.jsx` — Represents individual note items. It includes logic for displaying note information and buttons for editing or deleting a note.
 
 - `src/components/Navbar.jsx` — Implements the navigation bar, which includes links to pages like Home, Login, and Signup, as well as a logout function that clears authentication tokens.
+- `src/axiosConfig.js` Manages all backend communication using Axios. Configures the base URL automatically based on whether the app is in development or production mode. Intercepts requests to attach the Authorization header with the JWT token.
+Intercepts responses to handle expired tokens automatically — if the access token expires, it uses the refresh token to request a new one without forcing the user to log in again.
+If both tokens expire, it clears local storage and redirects the user to the login page.
+This file is crucial for maintaining a secure and seamless authentication workflow throughout the entire app.
 
-# Through this frontend, I designed and implemented the full user interface, handling state management, authentication flow, and user experience design. Every action performed on the frontend (such as creating, editing, or deleting a note) interacts with the backend in real time, demonstrating my understanding of asynchronous data handling and UI synchronization.
+ Through this frontend, I designed and implemented the full user interface, handling state management, authentication flow, and user experience design. Every action performed on the frontend (such as creating, editing, or deleting a note) interacts with the backend in real time, demonstrating my understanding of asynchronous data handling and UI synchronization.
 
 ---
 
