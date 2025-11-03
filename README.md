@@ -78,13 +78,13 @@ The backend folder contains all the logic for data storage, authentication, and 
 
 - `models.py` — Defines the core database model Note, which includes fields for the note’s title, content, category, slug, category, created_at, and a foreign key linking each note to its user. I designed this model to support personalized note storage, ensuring that each user can only access their own data.
 
--`serializers.py` — Converts Django model instances into JSON format so that they can be easily sent to and from the React frontend. The serializer also validates incoming data before saving it to the database.
+- `serializers.py` — Converts Django model instances into JSON format so that they can be easily sent to and from the React frontend. The serializer also validates incoming data before saving it to the database.
 
--`views.py` — Contains all API endpoints for CRUD operations (Create, Read, Update, Delete) and authentication. I implemented custom logic for listing notes by user, filtering by category, and performing keyword searches. The file also includes endpoints for user registration and JWT-based login.
+- `views.py` — Contains all API endpoints for CRUD operations (Create, Read, Update, Delete) and authentication. I implemented custom logic for listing notes by user, filtering by category, and performing keyword searches. The file also includes endpoints for user registration and JWT-based login.
 
--`urls.py` — Maps all API routes, such as /notes/, /notes-search/, /signup/, and /login/. I organized routes by functionality to maintain clean and logical project structure.
+- `urls.py` — Maps all API routes, such as /notes/, /notes-search/, /signup/, and /login/. I organized routes by functionality to maintain clean and logical project structure.
 
--`settings.py` — Configures essential components including Django REST Framework, JWT Authentication, and CORS (Cross-Origin Resource Sharing). I customized this file to allow secure communication between the backend (port 8000) and the React frontend (port 5173).
+- `settings.py` — Configures essential components including Django REST Framework, JWT Authentication, and CORS (Cross-Origin Resource Sharing). I customized this file to allow secure communication between the backend (port 8000) and the React frontend (port 5173).
 
  In summary, I built the backend from scratch to provide a secure, RESTful API capable of handling all user interactions and persistent data storage. It is responsible for authenticating users, storing their notes, and serving data dynamically to the frontend.
 
@@ -92,19 +92,19 @@ The backend folder contains all the logic for data storage, authentication, and 
 
 The frontend is a single-page application (SPA) built using React and the Vite build tool. It communicates with the Django API using axios to retrieve and update data asynchronously, ensuring that users can interact with their notes in real time without reloading the page.
 
--`src/App.jsx` — The main entry point of the application. It defines the overall routing structure using React Router and manages the layout shared across all pages.
+- `src/App.jsx` — The main entry point of the application. It defines the overall routing structure using React Router and manages the layout shared across all pages.
 
--`src/pages/HomePage.jsx` — Displays all user notes and integrates both search and filter functionalities. This page communicates directly with the backend to fetch and update notes dynamically.
+- `src/pages/HomePage.jsx` — Displays all user notes and integrates both search and filter functionalities. This page communicates directly with the backend to fetch and update notes dynamically.
 
--`src/pages/LoginPage.jsx` and `src/pages/SignupPage.jsx` — Handle user authentication and registration. I implemented form validation, API requests for JWT tokens, and token storage in localStorage to maintain user sessions securely.
+- `src/pages/LoginPage.jsx` and `src/pages/SignupPage.jsx` — Handle user authentication and registration. I implemented form validation, API requests for JWT tokens, and token storage in localStorage to maintain user sessions securely.
 
--`src/components/Filter.jsx` — Provides a dropdown menu for filtering notes by category (e.g., Personal, Business, Important). This component helps make the UI interactive and intuitive.
+- `src/components/Filter.jsx` — Provides a dropdown menu for filtering notes by category (e.g., Personal, Business, Important). This component helps make the UI interactive and intuitive.
 
--`src/components/NoteCardContainer.jsx` — Displays all notes in a grid-like structure. It receives data from the backend and updates the list in real time when a note is added, edited, or deleted.
+- `src/components/NoteCardContainer.jsx` — Displays all notes in a grid-like structure. It receives data from the backend and updates the list in real time when a note is added, edited, or deleted.
 
--`src/components/NoteCard.jsx` — Represents individual note items. It includes logic for displaying note information and buttons for editing or deleting a note.
+- `src/components/NoteCard.jsx` — Represents individual note items. It includes logic for displaying note information and buttons for editing or deleting a note.
 
--`src/components/Navbar.jsx` — Implements the navigation bar, which includes links to pages like Home, Login, and Signup, as well as a logout function that clears authentication tokens.
+- `src/components/Navbar.jsx` — Implements the navigation bar, which includes links to pages like Home, Login, and Signup, as well as a logout function that clears authentication tokens.
 
 # Through this frontend, I designed and implemented the full user interface, handling state management, authentication flow, and user experience design. Every action performed on the frontend (such as creating, editing, or deleting a note) interacts with the backend in real time, demonstrating my understanding of asynchronous data handling and UI synchronization.
 
