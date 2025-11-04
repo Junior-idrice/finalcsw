@@ -185,6 +185,7 @@ cd finalcsw
 
 ## ℹ️Frontend Setup
 - cd ../react-note-app
+- brew install node
 - npm install
 - npm run dev
 - Frontend runs at http://localhost:5173/
