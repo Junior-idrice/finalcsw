@@ -158,7 +158,7 @@ To run the app locally, ensure the following are installed:
 -`React Router` — Enables navigation and page routing without reloading the entire page.
 
 -`React Toastify` — Displays user-friendly notifications for actions such as successful logins, errors, or note updates.
-
+- brew install node
 - Node.js 18+
 - npm or yarn
 
